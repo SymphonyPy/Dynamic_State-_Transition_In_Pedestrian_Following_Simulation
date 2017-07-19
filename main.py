@@ -3,7 +3,7 @@ import pygame
 from DataParser import open_file
 
 file_path = "data_7_people.xlsx"
-background_image_filename="background.png"
+background_image_filename = "background.png"
 windowSize = [720, 540]
 white = 255, 255, 255
 black = 0, 0, 0
