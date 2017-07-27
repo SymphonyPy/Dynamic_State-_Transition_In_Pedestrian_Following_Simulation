@@ -1,6 +1,8 @@
 class Pedestrian(object):
     def __init__(self):
         self.info = {}
+        self.start_time = 0
+        self.end_time = 0
 
     def get_start_pos(self):
         return self.info[list(self.info.keys())[0]]
@@ -27,6 +29,8 @@ class Pedestrian(object):
                 temp.append(i)
         for i in temp:
             del self.info[i]
+        self.start_time = list(self.info.keys())[0]
+        self.end_time = list(self.info.keys())[-1]
         keys = list(self.info.keys())
         for i in keys[:-1]:
             interval = (self.info[round(i + 0.1, 3)] - self.info[round(i, 3)]) / 10
