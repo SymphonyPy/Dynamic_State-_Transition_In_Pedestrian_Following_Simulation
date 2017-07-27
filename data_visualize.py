@@ -15,10 +15,15 @@ def draw_tamplate_line_for_Leader(Leader):
     y = list(Leader.info.values())
     x.sort()
     y.sort()
-    template_line(x, y, 0.4, 0.6)
+    template_line(x, y, 0.4, 0.60)
     template_line(x, y, 0.4, 1.05)
-    template_line(x, y, 0.7, 0.6)
+    template_line(x, y, 0.4, 1.50)
+    template_line(x, y, 0.7, 0.60)
     template_line(x, y, 0.7, 1.05)
+    template_line(x, y, 0.7, 1.50)
+    template_line(x, y, 1.0, 0.6)
+    template_line(x, y, 1.0, 1.05)
+    template_line(x, y, 1.0, 1.50)
 
 
 def template_line(x, y, time_lag, dis_lag):
